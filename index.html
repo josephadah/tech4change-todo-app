@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/bootstrap.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="text-center mt-5 border-bottom mb-5 pb-2">My Todo App</h1>
+
+      <div class="row justify-content-center mb-5">
+        <div class="col-4">
+          <input type="text" placeholder="what do you want to do?" class="form-control" id="todoInput" />
+        </div>
+        <div class="col-2">
+          <button class="btn btn-primary" onclick="addTodo()">Add Todo</button>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <h3>Todo List</h3>
+          <ol id="todoList"></ol>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./scripts/app.js"></script>
+</html>
